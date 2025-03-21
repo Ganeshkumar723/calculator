@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/original.png" type="image/x-icon">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="calculator">
+            <div class="calculatorContainer">
+                <div class="calculatorBody">
+                    <div class="calculatorBlock">
+                        <div class="calculatorBox">
+                            <form action="">
+                                <h1>SIMPLE CALCULATOR</h1>
+                                <div class="number1">
+                                    <input type="number" id="number1" placeholder="Number1">
+                                </div>
+                                <div class="number2">
+                                    <input type="number" id="number2" placeholder="Number2">
+                                </div>
+                                <div class="operatorbox">
+                                    <div class="addtion">
+                                        <input type="button" value="+" class="operator" onclick="calculate('+')">
+                                    </div>
+                                    <div class="subraction">
+                                        <input type="button" value="-" class="operator" onclick="calculate('-')">
+                                    </div>
+                                    <div class="multiplication">
+                                        <input type="button" value="*" class="operator" onclick="calculate('*')">
+                                    </div>
+                                    <div class="division">
+                                        <input type="button" value="/" class="operator" onclick="calculate('/')">
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <input type="number" id="answer"  placeholder="Answer" readonly>
+                                </div>
+                                <div class="reset">
+                                    <input type="reset" id="reset">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* Step -2 - component */
+.calculator {
+    background-color: rgb(139, 199, 255);
+    padding: 0rem 20rem;
+   
+}
+
+/* step -3 - componentContainer */
+.calculatorContainer {
+    /* background-color: rgb(230, 56, 56); */
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+/* step -4 - row */
+.calculatorBody {
+    /* background-color: rgb(146, 245, 252); */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 5rem;
+}
+
+/* step -5 - column */
+.calculatorBlock {
+    /* background-color: rgb(65, 218, 72); */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 1rem 5rem;
+    
+}
+/* step -6 - subColumn */
+.calculatorBox {
+    background-color: rgb(153, 153, 129);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    border-radius: 15px;
+}
+/* step -7 - contentContainer */
+.calculatorBox form {
+    /* background-color: rgb(57, 240, 185); */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+    border:none;
+    border-radius: 15px;
+   
+}
+
+.calculatorBox h1 {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: black;
+    font-family:sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem ;
+}
+
+.number1,.number2 {
+    /* background-color: rgb(35, 198, 204);  */
+    width: 100%;
+    font-family:sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.operatorbox {
+    background-color: rgb(222, 171, 238);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.answer {
+    /* background-color: rgb(46, 88, 179); */
+    width: 100%;
+    font-family:sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem ;
+}
+
+.reset{
+    background-color: rgb(192, 190, 190);
+    width: 100%;
+    padding: 1rem;
+}
+
+input[type=number] {
+    background-color: #d3e7d3;
+    border-style: inset;
+    font-family:sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+input[type=button] {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-style: inset;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+input[type=reset]{
+    padding: 1rem;
+    font-size: 1rem;
+    border-style: inset;
+    background-color: #e72222;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
