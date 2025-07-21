@@ -1,0 +1,214 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* Step -2 - component */
+.calculator {
+       background-color: rgb(223, 223, 223);
+}
+
+/* step -3 - componentContainer */
+.calculatorContainer {
+    /* background-color: rgb(230, 56, 56); */
+   
+
+}
+
+/* step -4 - row */
+.calculatorBody {
+    /* background-color: rgb(146, 245, 252); */
+    
+}
+
+/* step -5 - column */
+.calculatorBlock {
+    /* background-color: rgb(54, 175, 245); */
+     
+    
+}
+/* step -6 - subColumn */
+.calculatorBox {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    width: 480px;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.calculatorBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+/* step -7 - contentContainer */
+
+.title h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--primaryColor);
+    letter-spacing: 1px;
+}
+
+
+.number1,
+.number2,
+.answer {
+    margin: 1rem 0;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 0 2px var(--secondaryColor);
+    outline: none;
+}
+
+.operatorbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+}
+
+.operator {
+    display: flex;
+    background-color: var(--primaryColor);
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.operator:hover {
+    background-color: var(--secondaryColor);
+}
+
+.answer input {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.reset {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.reset input {
+    background-color: #f4f4f4;
+    color: var(--darkColor);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.reset input:hover {
+    background-color: #e0e0e0;
+}
+
+.footer-note {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    font-style: italic;
+}
+
+/* flash animation for answer */
+.answer input.flash {
+    animation: flash 0.3s ease;
+}
+
+@keyframes flash {
+    0% { background: #c9f7ff; }
+    100% { background: #f8f8f8; }
+}
+
+
+/* history styles */
+.history {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+.history h3 {
+    text-align: center;
+    color: var(--primaryColor);
+}
+.history ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.history li {
+    margin: 0.2rem 0;
+    color: #333;
+}
+
+/* theme toggle button */
+.theme-switch {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.theme-switch button {
+    background: var(--primaryColor);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.theme-switch button:hover {
+    background: var(--secondaryColor);
+}
+
+/* dark theme */
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+.dark-theme .calculatorBox {
+    background: rgba(40, 40, 40, 0.8);
+}
+.dark-theme input {
+    background: #333;
+    color: #fff;
+}
+.dark-theme .history li {
+    color: #eee;
+}
+
+/* animated background */
+.calculator {
+    background: linear-gradient(270deg, #d0e7ff, #f5faff, #d0e7ff);
+    background-size: 600% 600%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
